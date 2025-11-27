@@ -4,7 +4,7 @@ REST API for depositing and withdrawing funds from wallets backed by PostgreSQL 
 
 ### Requirements
 
-- Go 1.22
+- Go 1.23+
 - Docker and docker-compose
 
 ### Configuration
@@ -43,6 +43,7 @@ Once both containers are healthy the API listens on `http://localhost:8080`.
 
 ```
 go test ./...
+docker compose run --rm wallet go test ./...
 ```
 
 ### Decisions
